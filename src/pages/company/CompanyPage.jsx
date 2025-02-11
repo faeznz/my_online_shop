@@ -1,6 +1,6 @@
 import React from 'react'
 import NavbarComponent from '../../components/Navbar'
-import CompanyDetailComponents from './components/CompanyDetailCOmponents'
+import CompanyDetailComponents from './components/CompanyDetailComponents'
 import TeamCompanyComponent from './components/TeamCompanyComponent'
 import FooterComponent from '../../components/Footer'
 
