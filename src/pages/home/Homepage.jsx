@@ -8,6 +8,17 @@ import FAQHomeComponents from './components/FAQHomeComponent';
 import CompanyHomeComponent from './components/CompanyHomeComponent';
 import supabase from '../../utils/supabaseConfig';
 
+const LoadingPage = () => {
+    return (
+        <div className="bg-white dark:bg-gray-900 h-screen w-screen flex items-center justify-center">
+            <div className="text-center">
+                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-500 dark:border-gray-300"></div>
+                <p className="mt-4 text-xl font-light text-gray-500 dark:text-gray-400">Loading...</p>
+            </div>
+        </div>
+    );
+};
+
 const HomePage = () => {
   const [contents, setContents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,6 +37,10 @@ const HomePage = () => {
 
     fetchContents();
   }, []);
+
+  if (loading) {
+    return <LoadingPage />; // Show loading page while fetching data
+  }
 
   return (
     <>

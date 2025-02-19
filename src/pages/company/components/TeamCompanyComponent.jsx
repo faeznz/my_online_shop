@@ -37,7 +37,7 @@ const TeamCompanyComponent = () => {
                     </p>
                 </div>
                 {loading ? (
-                    <div className="text-center">Loading team members...</div>
+                    <div className="text-center"></div>
                 ) : (
                     <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         {teamMembers.map((member) => (

@@ -29,7 +29,7 @@ const CompanyDetailComponents = () => {
     <section className="bg-white dark:bg-gray-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         {loading ? (
-          <div className="text-center">Loading content...</div>
+          <div className="text-center"></div>
         ) : (
           <>
             <img
